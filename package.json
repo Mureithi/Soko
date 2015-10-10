@@ -1,6 +1,4 @@
-"scripts": {
-  "start": "node index.js"
-},
+
 {
   "name": "seed",
   "version": "0.0.1",
@@ -33,7 +31,8 @@
     "grunt-contrib-cssmin": "^0.12.3"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
