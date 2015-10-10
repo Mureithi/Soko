@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'WelcomeController@index');
+
+
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
+
+Route::get('api','HomeController@index');
+//Route::resource('api/nextpage','HomeController@nextpage');
+Route::get('api/nextpage', 'HomeController@nextpage');

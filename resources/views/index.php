@@ -11,12 +11,12 @@
 
     <title>{{title}}</title>
 
-    <link rel="stylesheet" href="bower_components/webfont-opensans/css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../bower_components/webfont-opensans/css/stylesheet.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="bower_components/semantic-ui/dist/semantic.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-">
-    <link rel="stylesheet" href="bower_components/textAngular/src/textAngular.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../bower_components/semantic-ui/dist/semantic.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-">
+    <link rel="stylesheet" href="../bower_components/textAngular/src/textAngular.css" media="screen" title="no title" charset="utf-8">
     <!-- <link rel="stylesheet" href="assets/css/animate.min.css" media="screen" title="no title" charset="utf-8">-->
 
 
@@ -90,7 +90,7 @@
                                 <div class="h2-slide-text">Can They Find You?</div>
                                 <div class="slide-text">Let CODERS4AFRICA build your website and social media in 48 hours for less than $10 a month.</div>
                                 <div class="get-started">
-                                    <img src="images/button.png">
+                                    <img src="assets/images/button.png">
                                 </div>
                             </div>
                         </div>
@@ -158,28 +158,28 @@
 </footer>
 
 <!-- jQuery -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/angular-ui-router.stateHelper/statehelper.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/lodash/dist/lodash.js"></script>
-<script src="bower_components/restangular/dist/restangular.js"></script>
-<script src="bower_components/angular-scroll/angular-scroll.js"></script>
-<script src="bower_components/skrollr/src/skrollr.js"></script>
-<script src="bower_components/angular-smart-table/dist/smart-table.min.js"></script>
-<script src='bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
-<script src='bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
-<script src='bower_components/textAngular/dist/textAngular.min.js'></script>
-<script src='bower_components/moment/moment.js'></script>
-<script src='bower_components/angular-moment/angular-moment.js'></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-<script src="bower_components/angular-md5/angular-md5.js"></script>
-<script src='bower_components/semantic-ui/dist/semantic.min.js'></script>
-<script src='bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
-<script src='bower_components/angular-semantic-ui/dist/angular-semantic-ui.min.js'></script>
-<script src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/angular-ui-router.stateHelper/statehelper.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="../bower_components/lodash/dist/lodash.js"></script>
+<script src="../bower_components/restangular/dist/restangular.js"></script>
+<script src="../bower_components/angular-scroll/angular-scroll.js"></script>
+<script src="../bower_components/skrollr/src/skrollr.js"></script>
+<script src="../bower_components/angular-smart-table/dist/smart-table.min.js"></script>
+<script src='../bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+<script src='../bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
+<script src='../bower_components/textAngular/dist/textAngular.min.js'></script>
+<script src='../bower_components/moment/moment.js'></script>
+<script src='../bower_components/angular-moment/angular-moment.js'></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="../bower_components/angular-md5/angular-md5.js"></script>
+<script src='../bower_components/semantic-ui/dist/semantic.min.js'></script>
+<script src='../bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+<script src='../bower_components/angular-semantic-ui/dist/angular-semantic-ui.min.js'></script>
+<script src='../bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
 
 
 
