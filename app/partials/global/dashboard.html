@@ -1,0 +1,293 @@
+
+
+<div class="container">
+   
+   <div class="row">
+      
+      <div class="col-md-3">
+         
+        
+             <div class="row">
+                
+                <div class="col-md-12">
+                   
+                   <div id="profile">
+                     <div class="ui special cards">
+                          <div class="card">
+                            <div class="dimmable image pic-bg">
+                              <div class="ui dimmer">
+                                <div class="content">
+                                  <div class="center">
+                                    <div class="ui inverted button">Edit</div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="ui small images" id="prof-pic">
+                                  <img src="./assets/images/profpic.png">
+                                </div>
+                              
+                            </div>
+                            <div class="content pic-bg center-text">
+                             <div class="">
+                             JOHNSON K. DOE
+                              </div>
+                              
+                              <div class="">
+                                <span class="">Neuro Surgeon - Nairobi Hospital</span>
+                              </div>
+                            </div>
+                            
+                          </div>
+
+                        </div>  
+                   </div><!-- end #profile-->
+                    
+                </div>
+                 
+             </div>
+             
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="side-nav" id="">
+                        
+                        <div class="cat-header"> Categories </div>
+                        
+                        <div class="ui large vertical menu" id="stats">
+                              <a class="item">
+                                
+                                ALL
+                              </a>
+                              <a class="item">
+                                <div class="ui teal label">3308</div>
+                                Drugs
+                              </a>
+                              <a class="item">
+                                <div class="ui label">1850</div>
+                                Manufacturers
+                              </a>
+                              <a class="item">
+                                <div class="ui label">2100</div>
+                                Brands
+                              </a>
+                              <a class="item">
+                                <div class="ui label">3210</div>
+                                Diseases
+                              </a>
+                              <a class="item">
+                                <div class="ui label">4212</div>
+                                Distributors
+                              </a>
+                              <a class="item">
+                                <div class="ui label">48</div>
+                                Countries
+                              </a>
+                              
+                        </div>
+                        
+                        <div id="advert-left">
+                           <img src="./assets/images/ADVERT2.png"> 
+                        </div>
+                        
+                        
+                        
+                         
+                     </div>
+                 </div>
+             </div>
+        
+          
+      </div>
+      
+      <div class="col-md-9">
+         
+         <div class="row">
+            
+            <div class="col-md-6 featured-drugs" id="">
+               <div id="drugs-header">Featured Drugs</div>
+               
+                       <div class="contain-table">
+                            <table st-table="rowCollection" class="table table-striped">
+	                            <thead>
+	                                <tr>
+		                                <th>Name</th>
+		                                <th>Drugs</th>
+                                        
+	                                </tr>
+	                            </thead>
+	                                <tbody>
+	                                    <tr ng-repeat="row in rowCollection">
+		                                    <td>{{row.Name}}</td>
+                                            <td>{{row.drugs}}</td>
+                                            
+	                                    </tr>
+	                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="drugs-footer"> VIEW ALL </div>
+                
+            </div>
+            
+            <div class="col-md-6 common-diseases" id="">
+               <div id="disease-header">Common Diseases</div>
+               
+               <div class="contain-table">
+                            <table st-table="rowCollection" class="table table-striped">
+	                            <thead>
+	                                <tr>
+		                                <th>Disease</th>
+		                                <th>Drugs</th>
+                                        
+	                                </tr>
+	                            </thead>
+	                                <tbody>
+	                                    <tr ng-repeat="row in rowCollection">
+		                                    <td>{{row.Disease}}</td>
+                                            <td>{{row.drugs}}</td>
+                                            
+	                                    </tr>
+	                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="disease-footer"> VIEW ALL </div>
+                
+            </div>
+             
+         </div>
+         
+         <div class="row">
+            
+             <div class="col-md-12 ">
+                
+                
+                   
+                   <img src="./assets/images/ADVERT.png" class="advert-slim">
+                    
+                 
+             </div>
+         </div>
+         
+          <div class="row" style="">
+            
+            <div class="col-md-6 manufacturers-list" id="">
+               <div id="manufacturers-header">Top Manufacturers</div>
+               
+                       <div class="contain-table">
+                            <table st-table="rowCollection" class="table table-striped">
+	                            <thead>
+	                                <tr>
+		                                <th>Manufacturer</th>
+		                                <th>Drugs</th>
+                                        
+	                                </tr>
+	                            </thead>
+	                                <tbody>
+	                                    <tr ng-repeat="row in rowCollection">
+		                                    <td>{{row.Manufacturer}}</td>
+                                            <td>{{row.drugs}}</td>
+                                            
+	                                    </tr>
+	                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="manufacturers-footer"> VIEW ALL </div>
+                
+            </div>
+            
+            <div class="col-md-6 distributors-list sides-border" id="">
+               <div id="distributors-header">Recent Distributors</div>
+               
+               <div class="contain-table">
+                            <table st-table="rowCollection" class="table table-striped">
+	                            <thead>
+	                                <tr>
+		                                <th>Distributors</th>
+		                                <th>Drugs</th>
+                                        
+	                                </tr>
+	                            </thead>
+	                                <tbody>
+	                                    <tr ng-repeat="row in rowCollection">
+		                                    <td>{{row.Distributors}}</td>
+                                            <td>{{row.drugs}}</td>
+                                            
+	                                    </tr>
+	                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="distributors-footer"> VIEW ALL </div>
+                
+            </div>
+             
+         </div>
+         
+         <div class="row">
+            
+             <div class="col-md-8">
+              
+               <div id="advert-bottom-left" class="row">
+                  <img src="./assets/images/ADVERT3.png" > 
+               </div>
+               
+               <div class="row " >
+                 
+                 <div class="col-12 ">
+                    
+                    <div class="ui very relaxed items article-bottom sides-border " id="">
+                          <div class="item">
+
+                            <div class="content">
+                              <a class="ui header" href="#link">Article Title Goeshere</a>
+                              <div class="description">
+                                <p>Ut imperdiet dignissim feugiat. Phasellus tristique odio eu justo dapibus, nec rutrum ipsum luctus. Ut posuere nec tortor eu ullamcorper. <a href="#link">Etiam pellentesque</a> tincidunt tortor, non sagittis nibh pretium sit amet. Sed neque dolor, blandit eu ornare vel, lacinia porttitor nisi. Vestibulum sit amet diam rhoncus, consectetur enim sit amet, interdum mauris. Praesent feugiat finibus quam, porttitor varius est egestas id.</p>
+                              </div>
+                              <div class="content-footer">
+                                 <span>by Name Goeshere</span>
+                                    
+                                    <span id="text-grey">|  Feb 07, 2015</span>
+                                     
+                                </div>
+                            </div>
+                          </div>
+                  
+                
+                   
+               </div>
+                     
+                 </div>
+                 
+                
+                 
+             </div>
+             
+             
+                
+                
+                 
+             </div>
+             
+             <div class="col-md-4">
+               
+               <div id="advert-bottom-right">
+                 
+                  <img src="./assets/images/ADVERT4.png" >
+                   
+               </div>
+             
+         </div>
+         
+         
+          
+      </div>
+       
+   </div>
+    
+    
+</div>
+</div>
+
+

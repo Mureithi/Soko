@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html ng-app="modalApp">
+<head>
+  <meta charset="utf-8" />
+  <title>Semantic UI + Angular.JS</title>
+  <link href="../../../bower_components/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body ng-controller="RootCtrl">
+    <button class="ui primary button" ng-click="open_modal()">Open</button>
+    <modal ng-model="show_modal">
+      <i class="close icon"></i>
+      <div class="header">
+        Profile Picture
+      </div>
+      <div class="content">
+        <div class="ui medium image">
+          <img src="http://fakeimg.pl/250x250">
+        </div>
+        <div class="description">
+          <div class="ui header">We've auto-chosen a profile image for you.</div>
+          <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+          <p>Is it okay to use this photo?</p>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui black button">
+          Nope
+        </div>
+        <div class="ui positive right labeled icon button">
+          Yep, that's me
+          <i class="checkmark icon"></i>
+        </div>
+      </div>
+    </modal>
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script src="../../../bower_components/semantic/dist/semantic.min.js" type="text/javascript"></script>
+    <script src="../modal.js" type="text/javascript"></script>
+    <script src="controllers.js" type="text/javascript"></script>
+</body>
+</html>
