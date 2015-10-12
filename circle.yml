@@ -4,5 +4,5 @@ dependencies:
     - bower install
 
 test:
-  post:
-    - index.html
+  pre:
+    - bower install
