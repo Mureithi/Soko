@@ -3,3 +3,6 @@ dependencies:
     - npm install
     - bower install
 
+test:
+  post:
+    - index.html
