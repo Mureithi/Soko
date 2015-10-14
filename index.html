@@ -24,7 +24,7 @@
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" data-0="background-color: transparent" data-200-top="opacity:0;" data-150-top="visibility:visible; top: -55px; opacity: 0.3;" data-100-top="opacity: 1; position: fixed; top: 0;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -36,7 +36,7 @@
                 </button>
                <div class="pull-left" id="logo">
             <a  ng-click=""  href="">
-            <img src="assets/images/C4A-logo.png">
+            <img src="assets/images/C4A-logo.png" class="img-responsive col-md-11 col-sm-10 col-xs-10">
             </a>
 
             </div> 
@@ -44,7 +44,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="page-scroll active" ui-sref="home">HOME</a>
@@ -73,48 +73,7 @@
         <!-- /.container-fluid -->
         
     </nav>
-    <div class="banner">
-
-    <div class="banner-img">
-        </div>
-            
-            <div id="carousel-example" class="carousel slide" data-ride="carousel" style="padding-top: 200px;">
-    <!-- Wrapper for slides -->
-    <div class="row">
-        <div class="col-xs-offset-3 col-xs-6">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="carousel-content">
-                        <div>
-                            <div class="h1-slide-text">Your Customers are Online</div>
-                            <div class="h2-slide-text">Can They Find You?</div>
-                            <div class="slide-text">Let CODERS4AFRICA build your website and social media in 48 hours for less than $10 a month.</div>
-                            <div class="get-started"> 
-                            <img src="images/button.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                            
-                
-            </div>
-        </div>
-    </div>
-    <!-- Controls  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
- <a class="right carousel-control" href="#carousel-example" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>-->
-
-</div>
-            
-    
-    
-            
-    </div>
-    
-    
+       
             <div class="content" ui-view>
             
 
@@ -123,22 +82,22 @@
     
    <div class="container-fluid">
        <div class="row">
-           <div class="item">
+           <div class="text-center footer-text">
                 &#0169; 2015 <c4a>C4A</c4a> . All Rights Reserved
               </div>
        </div>
         <div class="row">
-         <div class="ui horizontal bulleted link list social">
+         <div class="ui text-center bulleted link list social">
             
-             <div class="ui circular linkedin icon button margin-social">
+             <div class="ui circular linkedin icon grey button margin-social">
                       <i class="linkedin icon"></i>
                 </div>
              
-              <div class="ui circular facebook icon button margin-social">
+              <div class="ui circular facebook icon grey button margin-social">
                   <i class="facebook icon"></i>
                 </div>
                 
-                <div class="ui circular twitter icon button margin-social">
+                <div class="ui circular twitter icon grey button margin-social">
                       <i class="twitter icon"></i>
                 </div>
                 
@@ -165,7 +124,8 @@
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="bower_components/lodash/dist/lodash.js"></script>
         <script src="bower_components/restangular/dist/restangular.js"></script>
-        <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+        <script src="bower_components/angular-skrollr/dist/angular-skrollr.js"></script>
+        <script src="bower_components/skrollr/src/skrollr.js"></script>
         <script src="bower_components/skrollr/src/skrollr.js"></script>
         <script src="bower_components/angular-smart-table/dist/smart-table.min.js"></script>
         <script src='bower_components/textAngular/dist/textAngular-rangy.min.js'></script>

@@ -1,8 +1,3 @@
-dependencies:
-  override:
-    - npm install
-    - bower install
-
-test:
-  pre:
-    - bower install
+machine:
+  php:
+    version: 5.5.11

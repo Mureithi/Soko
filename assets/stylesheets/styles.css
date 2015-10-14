@@ -58,14 +58,16 @@ table {
 /*Carouosel*/
 .carousel{
     width:100% !important;
-    position:absolute !important;
- z-index:100000000000;  
-     -webkit-filter: grayscale(0) brightness(1) !important;
+    -webkit-filter: grayscale(0) brightness(1) !important;
     filter: grayscale(0) brightness(1) !important;
     
 }
+#carousel-example{
+    padding-top: 200px;
+
+}
 #logo{
-    margin-top: 15%;
+    margin-top: 5%;
 }
 #banner{
     margin-top: 8%;
@@ -76,7 +78,7 @@ table {
 }
 .banner{
     position:relative;
-    height: 639px !important;
+    height: 639px;
     
     min-width: 100%;
     
@@ -281,27 +283,29 @@ table {
     
 }
 
-.text-c4a{ color: #fd953a !important; }
+.text-c4a{ color: #fd953a !important; font-weight: 500; }
 
+.ui.facebook.button,.ui.linkedin.button,.ui.twitter.button {
+    background-color: #949494 !important;
+}
 
-
-
-
-
+.footer-text,.section-heading{
+color: #949494;
+}
 
 .item{
     text-align: center;
 }
 .social{
-    margin-left: 46.5% !important;
-    margin-top:1.6% !important;
-    margin-bottom:2% !important;
+    margin-left: 46.5% ;
+    margin-top:1.6% ;
+    margin-bottom:2% ;
 }
 c4a{
     
     font-size: 13.95px;
     color: #fd953a;
-    font-weight: 400;
+    font-weight: 600;
 
 }
 
@@ -314,6 +318,19 @@ c4a{
 Main Components 
 
 -------------------------------- */
+
+.pr-basic{
+    background-color: #fd953a;
+
+}
+.pr-standard{
+    background-color: #ff592e;
+
+}
+.pr-premium{
+    background-color: #1479c7;
+
+}
 .cd-header {
   height: 100px;
   line-height: 170px;
@@ -333,6 +350,7 @@ Main Components
     font-size: 3.6rem;
     font-weight: 300;
   }
+    
 }
 
 .cd-pricing-container {
@@ -340,172 +358,7 @@ Main Components
   max-width: 1170px;
   margin: 4em auto;
 }
-@media only screen and (min-width: 768px) {
-  .cd-pricing-container {
-    margin: 2em auto;
-  }
-  .cd-pricing-container.cd-full-width {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.cd-pricing-list {
-  margin: 2em 0 0;
-}
-.cd-pricing-list > li {
-  position: relative;
-  margin-bottom: 1em;
-  background-color: #FFFFFF;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /* Firefox bug - 3D CSS transform, jagged edges */
-  outline: 1px solid transparent;
-}
-.cd-pricing-list > li::after {
-  /* subtle gradient layer on the right - to indicate it's possible to scroll */
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50px;
-  pointer-events: none;
-  background: -webkit-linear-gradient( right , #FFFFFF, rgba(255, 255, 255, 0));
-  background: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
-}
-.cd-pricing-list > li.is-ended::after {
-  /* class added in jQuery - remove the gradient layer when it's no longer possible to scroll */
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .cd-pricing-list {
-    margin: 3em 0 0;
-  }
-  .cd-pricing-list:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .cd-pricing-list > li {
-    width: 33.3333333333%;
-    float: left;
-  }
-  .cd-pricing-list > li::before {
-    /* separator between pricing tables - visible when number of tables > 3 */
-    content: '';
-    position: absolute;
-    z-index: 6;
-    left: -1px;
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    height: 50%;
-    width: 1px;
-    background-color: #b1d6e8;
-  }
-  .cd-pricing-list > li::after {
-    /* hide gradient layer */
-    display: none;
-  }
-  .cd-pricing-list > li.cd-popular {
-    box-shadow: inset 0 0 0 3px #e97d68;
-  }
-  .cd-pricing-list > li.cd-popular::before {
-    /* hide table separator for .cd-popular table */
-    display: none;
-  }
-  .cd-pricing-list > li.cd-popular + li::before {
-    /* hide table separator for tables following .cd-popular table */
-    display: none;
-  }
-  .cd-has-margins .cd-pricing-list > li, .cd-has-margins .cd-pricing-list > li.cd-popular {
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  }
-  .cd-secondary-theme .cd-pricing-list > li {
-    background: #3aa0d1;
-    background: -webkit-linear-gradient( bottom , #3aa0d1, #3ad2d1);
-    background: linear-gradient(to top, #3aa0d1, #3ad2d1);
-  }
-  .cd-secondary-theme .cd-pricing-list > li.cd-popular {
-    background: #e97d68;
-    background: -webkit-linear-gradient( bottom , #e97d68, #e99b68);
-    background: linear-gradient(to top, #e97d68, #e99b68);
-    box-shadow: none;
-  }
-  .cd-pricing-list:nth-of-type(1)::before {
-    /* hide table separator for the first table */
-    display: none;
-  }
-  .cd-has-margins .cd-pricing-list > li {
-    width: 32.3333333333%;
-    float: left;
-    margin-right: 1.5%;
-    border-radius: 4px 4px 6px 6px;
-  }
-  .cd-has-margins .cd-pricing-list > li:last-of-type {
-    margin-right: 0;
-  }
-  .cd-has-margins .cd-pricing-list > li::before {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1500px) {
-  .cd-full-width .cd-pricing-list > li {
-    padding: 2.5em 0;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .cd-popular .cd-pricing-wrapper > li::before {
-    /* hide table separator for .cd-popular table */
-    display: none;
-  }
-}
-.cd-pricing-header {
-  position: relative;
-  z-index: 1;
-  height: 80px;
-  padding: 1em;
-  pointer-events: none;
-  background-color: #3aa0d1;
-  color: #FFFFFF;
-}
-.cd-pricing-header h2 {
-  margin-bottom: 3px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.cd-popular .cd-pricing-header {
-  background-color: #e97d68;
-}
-@media only screen and (min-width: 768px) {
-  .cd-pricing-header {
-    height: auto;
-    padding: 1.9em 0.9em 1.6em;
-    pointer-events: auto;
-    text-align: center;
-    color: #173d50;
-    background-color: transparent;
-  }
-  .cd-popular .cd-pricing-header {
-    color: #e97d68;
-    background-color: transparent;
-  }
-  .cd-secondary-theme .cd-pricing-header {
-    color: #FFFFFF;
-  }
-  .cd-pricing-header h2 {
-    font-size: 1.8rem;
-    letter-spacing: 2px;
-  }
-}
-
-.cd-currency, .cd-value {
+ .cd-currency, .cd-value {
   font-size: 3rem;
   font-weight: 300;
 }
@@ -516,12 +369,16 @@ Main Components
   color: #8dc8e4;
   text-transform: uppercase;
 }
-.cd-popular .cd-duration {
-  color: #f3b6ab;
+.cd-popular, .cd-duration ,.pr-standard ,.pr-premium, .pr-basic {
+  color: white;
 }
 .cd-duration::before {
   content: '/';
   margin-right: 2px;
+} 
+ .get-started>img {
+    display: inline ;
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -529,20 +386,9 @@ Main Components
     font-size: 7rem;
     font-weight: 300;
   }
+}
 
-  .cd-currency, .cd-duration {
-    color: rgba(23, 61, 80, 0.4);
-  }
-  .cd-popular .cd-currency, .cd-popular .cd-duration {
-    color: #e97d68;
-  }
-  .cd-secondary-theme .cd-currency, .cd-secondary-theme .cd-duration {
-    color: #2e80a7;
-  }
-  .cd-secondary-theme .cd-popular .cd-currency, .cd-secondary-theme .cd-popular .cd-duration {
-    color: #ba6453;
-  }
-
+  
   .cd-currency {
     display: inline-block;
     margin-top: 10px;
@@ -555,153 +401,239 @@ Main Components
     font-size: 1.4rem;
   }
 }
-.cd-pricing-body {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.cd-pricing-list {
+  margin: 2em 0 0;
 }
-@media only screen and (min-width: 768px) {
-  .cd-pricing-body {
-    overflow-x: visible;
-  }
+.cd-pricing-list > li {
+  position: relative;
+  margin-bottom: 1em;
+  background-color: #FFFFFF;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Firefox bug - 3D CSS transform, jagged edges */
+  outline: 1px solid transparent;
 }
 
-.cd-pricing-features {
-  width: 600px;
+.cd-pricing-header h2 {
+    margin: 3px;
+    padding: 24px;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 1px solid white;
 }
-.cd-pricing-features:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .cd-pricing-features li {
-  width: 100px;
-  float: left;
-  padding: 1.6em 1em;
+  padding: 16px;
   font-size: 1.4rem;
-  text-align: center;
+  color: white;
   white-space: nowrap;
   overflow: hidden;
+  border-top: 1px solid white;
   text-overflow: ellipsis;
 }
 .cd-pricing-features em {
-  display: block;
   margin-bottom: 5px;
   font-weight: 600;
 }
-@media only screen and (min-width: 768px) {
-  .cd-pricing-features {
-    width: auto;
-  }
-  .cd-pricing-features li {
-    float: none;
-    width: auto;
-    padding: 1em;
-  }
-  .cd-popular .cd-pricing-features li {
-    margin: 0 3px;
-  }
-  .cd-pricing-features li:nth-of-type(2n+1) {
-    background-color: rgba(23, 61, 80, 0.06);
-  }
-  .cd-pricing-features em {
-    display: inline-block;
-    margin-bottom: 0;
-  }
-  .cd-has-margins .cd-popular .cd-pricing-features li, .cd-secondary-theme .cd-popular .cd-pricing-features li {
-    margin: 0;
-  }
-  .cd-secondary-theme .cd-pricing-features li {
-    color: #FFFFFF;
-  }
-  .cd-secondary-theme .cd-pricing-features li:nth-of-type(2n+1) {
-    background-color: transparent;
-  }
-}
-
 .cd-pricing-footer {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  /* on mobile it covers the .cd-pricing-header */
+  
   height: 80px;
   width: 100%;
 }
-.cd-pricing-footer::after {
-  /* right arrow visible on mobile */
-  content: '';
-  position: absolute;
-  right: 1em;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 20px;
-  width: 20px;
-  background: url(../img/cd-icon-small-arrow.svg);
-}
-@media only screen and (min-width: 768px) {
-  .cd-pricing-footer {
-    position: relative;
-    height: auto;
-    padding: 1.8em 0;
-    text-align: center;
-  }
-  .cd-pricing-footer::after {
-    /* hide arrow */
-    display: none;
-  }
-  .cd-has-margins .cd-pricing-footer {
-    padding-bottom: 0;
-  }
+.cd-pricing-footer button{
+    
+    background-color: #ffffff !important;
+
 }
 
-.cd-select {
-  position: relative;
-  z-index: 1;
-  display: block;
-  height: 100%;
-  /* hide button text on mobile */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  color: transparent;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+    
+    #logo {
+    margin: 0% 22% 2% 32%;
 }
-@media only screen and (min-width: 768px) {
-  .cd-select {
-    position: static;
-    display: inline-block;
-    height: auto;
-    padding: 1.3em 3em;
-    color: #FFFFFF;
-    border-radius: 2px;
-    background-color: #0c1f28;
-    font-size: 1.4rem;
-    text-indent: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  .no-touch .cd-select:hover {
-    background-color: #112e3c;
-  }
-  .cd-popular .cd-select {
-    background-color: #e97d68;
-  }
-  .no-touch .cd-popular .cd-select:hover {
-    background-color: #ec907e;
-  }
-  .cd-secondary-theme .cd-popular .cd-select {
-    background-color: #0c1f28;
-  }
-  .no-touch .cd-secondary-theme .cd-popular .cd-select:hover {
-    background-color: #112e3c;
-  }
-  .cd-has-margins .cd-select {
-    display: block;
-    padding: 1.7em 0;
-    border-radius: 0 0 4px 4px;
-  }
+    .h1-slide-text {
+    font: 700 1.3em "Myriad Pro";
+    color: #FFF;
+    margin-bottom: 10px;
+}
+    .h2-slide-text {
+    font: 700 1.2em "Myriad Pro";
+    color: #FF7200;
+    margin-bottom: 10px;
+}
+    .slide-text {
+    font: 700 1em "Myriad Pro";
+    color: #FFF;
+    margin-bottom: 20px;
+    
+}
+    .banner {
+    height: 380px;
+    min-width: 100%;
+}
+    
+    .banner-img {
+    height: 100%;
+    
+}
+    #carousel-example{
+    padding-top: 120px;
+
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+    #logo {
+    margin-top: 3px;
+}
+   
+     .banner {
+    height: 350px;
+    min-width: 100%;
+}
+    .h1-slide-text {
+    font: 700 2em "Myriad Pro";
+    color: #FFF;
+    margin-bottom: 10px;
+}
+    .h2-slide-text {
+    font: 700 1.8em "Myriad Pro";
+    color: #FF7200;
+    margin-bottom: 10px;
+}
+    .slide-text {
+    font: 700 1.1em "Myriad Pro";
+    color: #FFF;
+    margin-bottom: 20px;
+    
+}
+    .get-started>img {
+    display: inline ;
+    
+}
+    .contact-img>img{
+        margin-left:3.2em;
+    
+    }
+    .contact-details>p{
+    padding: 20px 20px 30px 60px;
+    }
+    
+    
+    .social {
+        width: 50% !important;
+    margin: 0 auto !important;
+}
+    .navbar-nav > li > a {
+    
+    font-size: 12px;
+}
+        
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+     .banner {
+    height: 420px;
+}
+    
+    
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+     .banner {
+    height: 440px;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+    .get-started>img {
+    display: inline ;
+    
+}
+     
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+    .get-started>img {
+    display: inline ;
+    
+}
+    .banner{
+    position:relative;
+    height: 639px;
+    
+    min-width: 100%;
+    
+}
+    .h1-slide-text{
+    
+    font: 700 2.7em 'Myriad Pro';
+    line-height: 2em;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.h2-slide-text{
+    
+    font: 700 2.5em / 2em 'Myriad Pro';
+    color: #ff7200;
+    margin-bottom: 0;
+
+}
+.banner2-slide-text{
+    
+    font: 700 2.7em / 2em 'Myriad Pro';
+    color: #ffffff;
+    margin-bottom: 0;
+
+}
+.slide-text{
+    
+    font: 700 1.8em / 1.4em 'Myriad Pro';
+    color: #ffffff;
+    margin-bottom: 0;
+    
+}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }
