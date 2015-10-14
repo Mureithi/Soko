@@ -317,6 +317,9 @@ c4a{
 .margin-social{
     margin: 8px !important;
 }
+.glyphicon-chevron-left {
+    margin-left: -35px !important;
+}
 
 /* -------------------------------- 
 
@@ -489,6 +492,36 @@ and (max-device-width : 480px) {
     padding-top: 120px;
 
 }
+    .center-img {
+    margin-left: 0%;
+    
+}
+    .services{
+    
+   padding-right: 0px !important;
+   border-bottom: 2px solid #cccccc;
+   border-right: 0px solid #cccccc !important;
+
+}
+    .section-notes {
+    color: #000;
+    font: 500 15px Helvetica;
+}
+    .col-xs-6 {
+    border-right: 2px solid #cccccc !important ;
+}
+    .place-right{
+        
+         border-right: 0px solid #cccccc !important;
+    
+    }
+    .contact-details>p{
+    padding: 20px 20px 30px 60px;
+    }
+    .glyphicon-chevron-left {
+    margin-left: -15px !important;
+}
+    
 }
 
 /* Smartphones (landscape) ----------- */

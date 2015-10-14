@@ -402,6 +402,7 @@ angular.module("../app/partials/global/home.html", []).run(["$templateCache", fu
     "				</div> <!-- .cd-pricing-body -->\n" +
     "                <footer class=\"cd-pricing-footer\">\n" +
     "					<button class=\"text-c4a massive ui button\"> BUY NOW </button>\n" +
+    "                    <div><img src=\"assets/images/afri-hem.png\" class=\"img-responsive\" style=\"position: relative; padding: 30px;\"></div>\n" +
     "				</footer>  <!-- .cd-pricing-footer -->\n" +
     "			</div>\n" +
     "            \n" +
