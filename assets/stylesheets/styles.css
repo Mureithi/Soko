@@ -55,6 +55,11 @@ table {
     min-width: 100%;
     position: relative;
 }
+.navbar-default .navbar-toggle {
+    border-color: transparent !important;
+    border-radius: 0px !important;
+    font: white !important;
+}
 /*Carouosel*/
 .carousel{
     width:100% !important;
@@ -151,8 +156,8 @@ table {
 }
 
 .navbar-default {
-     background-color: transparent  !important;
-     border-color: transparent  !important;
+   /**  background-color: transparent  !important;
+     border-color: transparent  !important;**/
      
 }
 .border-right{
@@ -491,7 +496,7 @@ and (max-device-width : 480px) {
 and (min-width : 321px) {
 /* Styles */
     #logo {
-    margin-top: 3px;
+    margin: 10px;
 }
    
      .banner {
