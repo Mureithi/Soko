@@ -4,6 +4,7 @@
   "description": "new seed",
   "main": "Gruntfile.js",
   "dependencies": {
+    "express": "^4.13.3",
     "grunt": "~0.4.5"
   },
   "devDependencies": {
