@@ -29,7 +29,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    width: 100%;
+    height: 100%;
 	line-height: 1;
+    font-family: 'Open+Sans',sans-serif;
+    height:auto !important;
+    margin-bottom: 60px;
     
 }
 ol, ul {
@@ -46,6 +51,23 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.ui.form input:not([type]), .ui.form input[type="text"], .ui.form input[type="email"], .ui.form input[type="date"], .ui.form input[type="datetime-local"], .ui.form input[type="password"], .ui.form input[type="number"], .ui.form input[type="url"], .ui.form input[type="tel"] {
+    
+    border-radius:  0px !important;
+    
+}
+(index)media="screen"
+.ui.form textarea, .ui.form input:not([type]), .ui.form input[type="text"], .ui.form input[type="email"], .ui.form input[type="date"], .ui.form input[type="datetime-local"], .ui.form input[type="password"], .ui.form input[type="number"], .ui.form input[type="url"], .ui.form input[type="tel"], .ui.form .ui.input {
+}
+.ui.button {}
+
+.ui.orange.button {
+    background-color: #fd953a !important;
+    border-radius:  0px !important;
+}
+.ui.black.button {
+    border-radius:  0px !important;
 }
 .filter{
     background: url(images/filter.png);
@@ -81,10 +103,41 @@ table {
 .collapse{
     margin-top: 2%;
 }
+.progress1{
+    left: 0px;
+    right: 0px;
+    height:62px;
+    background-repeat: no-repeat;
+    margin-left: 20% ;
+    margin-top: 20px ;
+    
+}
+.progress2{
+    left: 0px;
+    right: 0px;
+    height:62px;
+    background-repeat: no-repeat;
+    margin-left: 20% ;
+    margin-top: 20px ;
+    
+}
+.progress3{
+    left: 0px;
+    right: 0px;
+    height:62px;
+    background-repeat: no-repeat;
+    margin-left: 20% ;
+    margin-top: 20px ;
+    
+}
+.actions{
+    margin-left: 40% ;
+    margin-top: 20px ;
+    margin-bottom: 30px ;
+}
 .banner{
     position:relative;
     height: 639px;
-    
     min-width: 100%;
     
 }
@@ -99,6 +152,24 @@ table {
     -webkit-filter: grayscale(1) brightness(0.5);
     filter: grayscale(1) brightness(0.5);
    
+}
+.banner2{
+    position:relative;
+    height: 310px;
+    min-width: 100%;
+    
+}
+.banner-img2{
+    left: 0px;
+    right: 0px;
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background: url( ../images/Steps-bg3.jpg);
+       
+}
+#carousel-example2 {
+    padding-top: 150px;
 }
 
 .get-started{
@@ -140,6 +211,10 @@ table {
 }
 .no-padding{
     padding:0 !important;
+    
+}
+.steps-padding{
+    padding: 12px;
     
 }
 .how-img{
@@ -313,6 +388,10 @@ c4a{
     font-weight: 600;
 
 }
+.footer {
+    bottom: 0;
+    width: 100%;
+}
 
 .margin-social{
     margin: 8px !important;
@@ -348,6 +427,17 @@ Main Components
   text-align: center;
   color: #FFFFFF;
   font-size: 2.2rem;
+}
+
+.selected-template{
+    
+    left: 0px;
+    right: 0px;
+    width:100%;
+    height:300px;
+    background: url(../images/portfolio2.png);
+    background-repeat: no-repeat;
+    margin-top: 8%;
 }
 @media only screen and (min-width: 768px) {
   .cd-header {

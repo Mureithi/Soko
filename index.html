@@ -22,7 +22,7 @@
    
 </head>
 
-<body id="page-top">
+<body>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" data-0="  background-color:rgba(80,80,80,0); border-color:rgba(80,80,80,0);"
      data-100="background-color:rgba(8,8,8,1);">
@@ -74,13 +74,17 @@
         <!-- /.container-fluid -->
         
     </nav>
+            <div ui-view="banner">
+            
+
+            </div>
        
-            <div class="content" ui-view>
+            <div class="container-fluid content" ui-view="content">
             
 
             </div>
             
-    
+    <div class="footer">
    <div class="container-fluid">
        <div class="row">
            <div class="text-center footer-text">
@@ -114,9 +118,9 @@
        
        
         </div>
-      <footer class="footer hem">
+      <footer class=" hem">
     </footer>
-
+</div>
     <!-- jQuery -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/angular/angular.js"></script>
@@ -148,7 +152,9 @@
         <script src="//localhost:35729/livereload.js"></script>
     <script>
     
-    
+    $('.ui.dropdown')
+  .dropdown()
+;
    
     </script>
 

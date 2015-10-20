@@ -31,7 +31,7 @@
     "grunt-contrib-cssmin": "^0.12.3"
   },
   "scripts": {
-    "test": "test"
+    "start": "node scripts/web-server.js"
   },
   "repository": {
     "type": "git",
