@@ -556,48 +556,39 @@ angular.module("../app/partials/getstarted-2.html", []).run(["$templateCache", f
     "      \n" +
     "      <section class=\"progress2\">\n" +
     "         <img src=\"assets/images/progress-2.png\" class=\"img-responsive col-md-7 col-xs-12 \">\n" +
-    "          \n" +
     "      </section>\n" +
     "       \n" +
     "   </div>\n" +
     "   \n" +
     "   \n" +
     "   <div class=\"row steps-padding\">\n" +
-    "      <div id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
-    "  <!-- Indicators -->\n" +
-    "  <ol class=\"carousel-indicators\">\n" +
-    "    <li data-target=\"#carousel-example-generic\" data-slide-to=\"0\" class=\"active\"></li>\n" +
-    "    <li data-target=\"#carousel-example-generic\" data-slide-to=\"1\"></li>\n" +
-    "    <li data-target=\"#carousel-example-generic\" data-slide-to=\"2\"></li>\n" +
-    "  </ol>\n" +
+    "     \n" +
+    "     <div class=\"list-templates\">\n" +
+    "       <div class=\"col-md-1\">\n" +
+    "        </div>\n" +
+    "        <div class=\"col-md-3 portfolio-item\">\n" +
+    "           <div class=\"contain-portfolio-item\">\n" +
+    "            </div>\n" +
+    "             <img src=\"assets/images/portfolio2.png\" alt=\"\">\n" +
+    "            <span>Basic Template 1</span>  \n" +
+    "               \n" +
+    "           \n" +
+    "            \n" +
+    "        </div>\n" +
+    "        <div class=\"col-md-3 portfolio-item\">\n" +
+    "            <img src=\"assets/images/portfolio1.png\" alt=\"\">\n" +
+    "            <span>Basic Template 2</span>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-md-3 portfolio-item\">\n" +
+    "            <img src=\"assets/images/portfolio1.png\" alt=\"\">\n" +
+    "            <span>Basic Template 3</span>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-md-1\">\n" +
+    "        </div>\n" +
+    "         \n" +
+    "     </div>\n" +
+    "      \n" +
     "\n" +
-    "  <!-- Wrapper for slides -->\n" +
-    "  <div class=\"carousel-inner\" role=\"listbox\">\n" +
-    "    <div class=\"item active\">\n" +
-    "      <img src=\"\" alt=\"\">\n" +
-    "      <div class=\"carousel-caption\">\n" +
-    "        \n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    <div class=\"item\">\n" +
-    "      <img src=\"\" alt=\"\">\n" +
-    "      <div class=\"carousel-caption\">\n" +
-    "        \n" +
-    "      </div>\n" +
-    "    </div>\n" +
-    "    \n" +
-    "  </div>\n" +
-    "\n" +
-    "  <!-- Controls -->\n" +
-    "  <a class=\"left carousel-control\" href=\"#carousel-example-generic\" role=\"button\" data-slide=\"prev\">\n" +
-    "    <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>\n" +
-    "    <span class=\"sr-only\">Previous</span>\n" +
-    "  </a>\n" +
-    "  <a class=\"right carousel-control\" href=\"#carousel-example-generic\" role=\"button\" data-slide=\"next\">\n" +
-    "    <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>\n" +
-    "    <span class=\"sr-only\">Next</span>\n" +
-    "  </a>\n" +
-    "</div>\n" +
     "   </div>\n" +
     "   \n" +
     "   \n" +
@@ -658,8 +649,9 @@ angular.module("../app/partials/getstarted-3.html", []).run(["$templateCache", f
     "                        Confirmation receipt.This is dummy text, please don’t read any further. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat.</p></div>\n" +
     "        </div>\n" +
     "        <div class=\"actions\">\n" +
-    "           <button class=\"ui black massive button\" ui-sref=\"getstarted-1\" >Previous</button>\n" +
-    "         <button class=\"ui orange massive button\" ui-sref=\"getstarted-3\">Next</button>\n" +
+    "           <button class=\"ui black massive button\" ui-sref=\"getstarted-2\" >Previous</button>\n" +
+    "         <button class=\"ui orange massive button\" ui-sref=\"getstarted-3\">Submit <i class=\"glyphicon glyphicon-chevron-right\"></i></button>\n" +
+    "          \n" +
     "           \n" +
     "       </div>\n" +
     "        \n" +
@@ -828,7 +820,7 @@ angular.module("../app/partials/global/home.html", []).run(["$templateCache", fu
     "        <div class=\"\">\n" +
     "                    <h2 id=\"\" class=\"section-heading\" style=\"margin-top:5%;\">Fill Basic Information</h2>\n" +
     "                    \n" +
-    "                    <p style=\"margin-top:5%;\">Lorem ipsum dolor sit amet, eu cum eius animal mandamus. Quas saepe mediocritatem mei eu, et fabellas adversarium qui, ius ex ullum aeque incorrupte. Sint decore efficiantur id vix. Ius an modo tempor interpretaris, ludus bonorum scriptorem id cum, omnium voluptatibus cu cum.</p>\n" +
+    "                    <p style=\"margin-top:5%;text-align:left;\">Lorem ipsum dolor sit amet, eu cum eius animal mandamus. Quas saepe mediocritatem mei eu, et fabellas adversarium qui, ius ex ullum aeque incorrupte. Sint decore efficiantur id vix. Ius an modo tempor interpretaris, ludus bonorum scriptorem id cum, omnium voluptatibus cu cum.</p>\n" +
     "                </div>\n" +
     "      </div>\n" +
     "        </div>\n" +
@@ -836,26 +828,26 @@ angular.module("../app/partials/global/home.html", []).run(["$templateCache", fu
     "      \n" +
     "    </div>\n" +
     "   <div class=\"item\">\n" +
-    "      <div class=\"col-md-4 col-sm-4 col-xs-12\"><img src=\"assets/images/basic-infor.png\" alt=\"...\" class=\"img-responsive \"></div>\n" +
+    "      <div class=\"col-md-4 col-sm-4 col-xs-12\"><img src=\"assets/images/works-2.png\" alt=\"...\" class=\"img-responsive \"></div>\n" +
     "        <div class=\"col-md-8 col-sm-8 col-xs-12\">\n" +
     "        <div class=\"\">\n" +
     "        <div class=\"\">\n" +
     "                    <h2 id=\"\" class=\"section-heading\" style=\"margin-top:5%;\">Fill Basic Information</h2>\n" +
     "                    \n" +
-    "                    <p style=\"margin-top:5%;\">Lorem ipsum dolor sit amet, eu cum eius animal mandamus. Quas saepe mediocritatem mei eu, et fabellas adversarium qui, ius ex ullum aeque incorrupte. Sint decore efficiantur id vix. Ius an modo tempor interpretaris, ludus bonorum scriptorem id cum, omnium voluptatibus cu cum.</p>\n" +
+    "                    <p style=\"margin-top:5%;text-align:left;\">Lorem ipsum dolor sit amet, eu cum eius animal mandamus. Quas saepe mediocritatem mei eu, et fabellas adversarium qui, ius ex ullum aeque incorrupte. Sint decore efficiantur id vix. Ius an modo tempor interpretaris, ludus bonorum scriptorem id cum, omnium voluptatibus cu cum.</p>\n" +
     "                </div>\n" +
     "      </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "      \n" +
     "      <div class=\"item\">\n" +
-    "      <div class=\"col-md-4 col-sm-4 col-xs-12\"><img src=\"assets/images/basic-infor.png\" alt=\"...\" class=\"img-responsive \"></div>\n" +
+    "      <div class=\"col-md-4 col-sm-4 col-xs-12\"><img src=\"assets/images/works-3.png\" alt=\"...\" class=\"img-responsive \"></div>\n" +
     "        <div class=\"col-md-8 col-sm-8 col-xs-12\">\n" +
     "        <div class=\"\">\n" +
     "        <div class=\"\">\n" +
     "                    <h2 id=\"\" class=\"section-heading\" style=\"margin-top:5%;\">Fill Basic Information</h2>\n" +
     "                    \n" +
-    "                    <p style=\"margin-top:5%;\">Lorem ipsum dolor sit amet, eu cum eius animal mandamus. Quas saepe mediocritatem mei eu, et fabellas adversarium qui, ius ex ullum aeque incorrupte. Sint decore efficiantur id vix. Ius an modo tempor interpretaris, ludus bonorum scriptorem id cum, omnium voluptatibus cu cum.</p>\n" +
+    "                    <p style=\"margin-top:5%;text-align:left;\">Lorem ipsum dolor sit amet, eu cum eius animal mandamus. Quas saepe mediocritatem mei eu, et fabellas adversarium qui, ius ex ullum aeque incorrupte. Sint decore efficiantur id vix. Ius an modo tempor interpretaris, ludus bonorum scriptorem id cum, omnium voluptatibus cu cum.</p>\n" +
     "                </div>\n" +
     "      </div>\n" +
     "        </div>\n" +
@@ -987,7 +979,10 @@ angular.module("../app/partials/global/home.html", []).run(["$templateCache", fu
     "<section id=\"featuredwork\" class=\"border-bottom container-fluid\">\n" +
     "        <div class=\"container-fluid\">\n" +
     "            <div class=\"row\">\n" +
-    "                <div class=\"col-lg-6 col-md-5 col-xs-12\">\n" +
+    "               <div class=\"col-lg-2 col-md-2\">\n" +
+    "                    \n" +
+    "                </div>\n" +
+    "                <div class=\"col-lg-4 col-md-4 col-xs-12\">\n" +
     "                    <img src=\"assets/images/Layer-61.png\" class=\"img-responsive\">\n" +
     "                    \n" +
     "                </div>\n" +
@@ -1016,10 +1011,10 @@ angular.module("../app/partials/global/home.html", []).run(["$templateCache", fu
     "            <h2 id=\"text-green\" class=\"section-heading text-center\" style=\"margin:1em;\">Contact Us</h2>\n" +
     "            \n" +
     "            <div class=\"row\">\n" +
-    "                <div class=\"col-lg-1 col-md-1\">\n" +
+    "                <div class=\"col-lg-2 col-md-2\">\n" +
     "                </div>\n" +
     "                \n" +
-    "                <div class=\"col-lg-4 col-md-4 col-xs-12 border-right contact-img\" style=\"margin-bottom:2em;\">\n" +
+    "                <div class=\"col-lg-3 col-md-3 col-xs-12 border-right contact-img\" style=\"margin-bottom:2em;\">\n" +
     "                  <img src=\"assets/images/Layer-64-copy.jpg\" class=\"img-responsive\" style=\"\">\n" +
     "                </div>\n" +
     "                <div class=\"col-lg-3 col-md-3 col-xs-12 contact-details \" >\n" +
@@ -1060,6 +1055,16 @@ angular.module("../app/partials/global/home.html", []).run(["$templateCache", fu
     "                            <textarea placeholder=\"Message\"></textarea>\n" +
     "                        </div>\n" +
     "                    </div>\n" +
+    "                    <div class=\"\">\n" +
+    "       \n" +
+    "       <div class=\"\" style=\"margin-top:2%;\">\n" +
+    "         <button class=\"ui orange massive button\" ui-sref=\"\">Send Message</button>\n" +
+    "           \n" +
+    "       </div>\n" +
+    "        \n" +
+    "          \n" +
+    "          \n" +
+    "      </div>\n" +
     "                    \n" +
     "                </div>\n" +
     "                <div class=\"col-lg-1 col-md-1\">\n" +
