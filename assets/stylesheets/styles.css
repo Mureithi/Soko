@@ -234,6 +234,7 @@ table {
 .navbar-default .navbar-nav>li>a {
     color: white !important ;
     cursor: pointer !important;
+    font-family: 'Open+Sans',sans-serif !important;
     
 }
 
@@ -648,7 +649,7 @@ and (max-device-width : 480px) {
 and (min-width : 321px) {
 /* Styles */
     #logo {
-    margin: 10px;
+    margin: 0% 22% 2% 32%;
 }
    
      .banner {
@@ -695,6 +696,15 @@ and (min-width : 321px) {
         
 }
 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 480px) {
+/* Styles */
+     #logo {
+    margin: 10px;
+}
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
@@ -722,6 +732,13 @@ and (orientation : landscape) {
      .banner {
     height: 440px;
 }
+    #logo {
+    margin: 10px;
+}
+     .nav > li > a {
+   
+    padding: 10px 9px !important;
+}
 }
 
 /* iPads (portrait) ----------- */
@@ -733,6 +750,13 @@ and (orientation : portrait) {
     .get-started>img {
     display: inline ;
     
+}
+    #logo {
+    margin: 10px;
+}
+    .nav > li > a {
+   
+    padding: 15px 9px !important;
 }
      
 }
